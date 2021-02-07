@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap');
+body{
+    padding: 0px auto;
+    margin: 0px auto;
+}
+.background-image-home>img{
+    filter: brightness(30%);
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.home>.background-image-home>header{
+    margin-top: -760px;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.home>.background-image-home>.account{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    color: #FFFF;
+}
+
+.home>.background-image-home>.account>.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home>.background-image-home>.account>.content>.title-main>h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 50px;
+}
+.home>.background-image-home>.account>.content>.title-main>h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 26px;
+}
+
+
+.home>.background-image-home>.account>.content>form>span{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19.2px;
+}
+
+.home>.background-image-home>.account>.content>form>.fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home>.background-image-home>header>.logo-header>img{
+    width: 170px;
+    height: 70px;
+    margin-left:40px;
+}
+
+.home>.background-image-home>header>.enter-btn{
+    margin: 24px 50px 0px 0px;
+}
+
+.home>.background-image-home>header>.enter-btn>a{
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #E50914;
+    color: #FFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
