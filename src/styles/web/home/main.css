@@ -6,8 +6,8 @@ body{
 .background-image-home>img{
     filter: brightness(30%);
     width: 100%;
-    height: auto;
-    
+    height: 100%;
+    object-fit: cover;
     
 }
 
@@ -26,6 +26,7 @@ body{
     justify-content: center;
     position: relative;
     color: #FFFF;
+    margin-top: 50px;
 }
 
 .home>.background-image-home>.account>.content{
@@ -34,22 +35,30 @@ body{
     justify-content: center;
 }
 
-.home>.background-image-home>.account>.content>.title-main>h1{
+.account>.content>.title-main{
+    width: 650px;
+    text-align: center;
+    line-height: 51px; 
+}
+
+.account>.content>.title-main>h1{
+    text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 50px;
 }
-.home>.background-image-home>.account>.content>.title-main>h2{
+.account>.content>.title-main>h2{
+    text-align: center;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 26px;
 }
 
 
-.home>.background-image-home>.account>.content>form>span{
+.home>.background-image-home>.account>.content>.form>span{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 19.2px;
 }
 
-.home>.background-image-home>.account>.content>form>.fields{
+.home>.background-image-home>.account>.content>.form>.fields{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,3 +83,45 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
 }
+
+.form>.fields>.input-email-home{
+    margin-top: 15px;
+    width: 450px;
+    height: 60px;
+    padding-left: 15px;
+}
+
+.form>.fields>.btn-submit-home{
+    margin-left:1px ;
+    margin-top: 15px;
+    width:183.36px;
+    height: 66px;
+    background-color: #E50914;
+    color: #FFFF;
+    border: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 26px;
+}
+.form>.fields>label{
+    margin-right: 580px;
+    margin-top: 38px;
+    z-index: 999;
+    color: #8c8c8c;
+    font-family: 'Nunito Sans',sans-serif;
+    position: absolute;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.form>.fields>input:focus{
+    border-color: #0071eb;
+    outline: 0;
+}
+
+.form>.fields input:focus + label{
+  font-size: 13px;
+  margin-top: 23px;
+  
+}
+
