@@ -1,2 +1,2 @@
-# NetFlix_Clone_JS
- Clone da NetFlix Utilizando JavaScript
+# NetFlix_Clone
+ Clone da NetFlix Utilizando JavaScript Puro
