@@ -103,7 +103,7 @@ body{
     font-size: 26px;
 }
 .form>.fields>label{
-    margin-right: 580px;
+    margin-right: 583px;
     margin-top: 38px;
     z-index: 999;
     color: #8c8c8c;
@@ -120,6 +120,7 @@ body{
 }
 
 .form>.fields input:focus + label{
+    margin-right: 590px;
   font-size: 13px;
   margin-top: 23px;
   
