@@ -26,7 +26,7 @@ body{
     justify-content: center;
     position: relative;
     color: #FFFF;
-    margin-top: 50px;
+    margin-top: 105px;
 }
 
 .home>.background-image-home>.account>.content{
@@ -85,9 +85,10 @@ body{
 }
 
 .form>.fields>.input-email-home{
+    border: none;
+    border-radius: 2px;
     margin-top: 15px;
     width: 450px;
-    height: 60px;
     padding-left: 15px;
 }
 
@@ -95,16 +96,22 @@ body{
     margin-left:1px ;
     margin-top: 15px;
     width:183.36px;
-    height: 66px;
+    height: 60px;
     background-color: #E50914;
     color: #FFFF;
     border: none;
+    border-radius: 0px 2px 2px 0px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 26px;
 }
+
+.form>.fields>.btn-submit-home:hover{
+    background-color: #f40612;
+}
+
 .form>.fields>label{
     margin-right: 583px;
-    margin-top: 38px;
+    margin-top: 35px;
     z-index: 999;
     color: #8c8c8c;
     font-family: 'Nunito Sans',sans-serif;
@@ -121,8 +128,20 @@ body{
 
 .form>.fields input:focus + label{
     margin-right: 590px;
-  font-size: 13px;
-  margin-top: 23px;
-  
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 23px; 
+    
+}
+
+.alert-msg{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #ffa00a;
+    font-family: 'Nunito Sans',sans-serif;
+}
+
+.hidden{
+    display: none;
 }
 

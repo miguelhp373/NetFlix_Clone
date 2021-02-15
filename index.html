@@ -11,8 +11,13 @@
     <!--Internal CSS-->
     <link rel="stylesheet" href="src/styles/web/home/main.css">
 
-    <!--FontAwesome-->
+    <!--externals-->
     <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
+    <script src="src/jquery/jquery-3.5.1.min.js"></script>
+
+    <!--Internals-->
+    <script src="src/components/home/index.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +44,7 @@
                             <br>
                             <div class="fields">
                                 <input type="email" id="email-input" class="input-email-home" required>
-                                <label for="email-input">Email</label>
+                                <label for="email-input" id="lb-email-input">Email</label>
                                 <button class="btn-submit-home">
                                     <span>Vamos lá</span>
                                     <span style="
@@ -49,6 +54,9 @@
                                     </span>
                                 </button>
                             </div>
+                            <div class="alert-msg hidden" id="alert-msg-form">
+                                <span style="margin-top:5px;">O email é obrigatório.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,6 +64,7 @@
 
         </section>
     </main>
+    
 </body>
 
 </html>
