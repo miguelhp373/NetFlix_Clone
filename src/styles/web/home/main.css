@@ -109,6 +109,11 @@ body{
     background-color: #f40612;
 }
 
+.form>.fields>.btn-submit-home:focus{
+    outline: 0;
+}
+
+
 .form>.fields>label{
     margin-right: 583px;
     margin-top: 35px;
