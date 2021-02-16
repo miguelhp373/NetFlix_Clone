@@ -1,2 +1,3 @@
 # NetFlix_Clone
- Clone da NetFlix Utilizando JavaScript Puro
+ Clone da NetFlix Utilizando Html, Css e Jquery
+ 
