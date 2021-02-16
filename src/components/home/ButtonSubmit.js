@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#submit-email-user').click(function(){
         if($('#email-input').val().length > 0){
-            console.log('ok')
+            console.log('ok')//redireciona
         }else{
             $('#email-input').focus();
             $('#alert-msg-form').removeClass('hidden');//adiciona a classe que oculta o alerta de erro
