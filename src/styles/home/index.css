@@ -420,6 +420,7 @@ body{
     font-family: 'Nunito Sans',sans-serif;
     font-size: 26px;
     border: none;
+    cursor: pointer;
     margin-top: 10px;
     text-align: left;
     padding: 20px;
