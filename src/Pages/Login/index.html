@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+
+    <!--Externals-->
+    <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
+    <script src="src/jquery/jquery-3.5.1.min.js"></script>
+
+    <!--Internals Styles-->
+    <link rel="stylesheet" href="../../styles/login/index.css">
 </head>
+
 <body>
-    
+    <div class="home">
+        <div class="background-image-home">
+            <img src="../../assets/login/background-login.jpg" alt="Background">
+            <header>
+                <a href="../../../index.html">
+                    <div class="logo-header">
+                        <img src="../../assets/logo/Netflix_Logo_RGB.png" alt="Logo">
+                    </div>
+                </a>
+            </header>
+            <main>
+                <section class="form-login-user">
+                    <div class="form-content">
+                        <div class="title-form">
+                            <h1>Entrar</h1>
+                        </div>
+                        <div class="inputs-form">
+                            <div class="input-components">
+                                <input type="email" name="email-login-user-form" id="email-login-user-form">
+                                <label for="email-login-user-form" class="lb-email">Email ou número de telefone</label>
+
+                                <input type="password" name="pass-login-user-form" id="pass-login-user-form">
+                                <label for="pass-login-user-form" class="lb-pass">Senha</label>
+
+                                <button>Entrar</button>
+
+                                <div class="content-user-active-true">
+                                    <input type="checkbox" name="user-true-login" id="user-true-login">
+                                    <label for="user-true-login">Lembre-se de mim</label>
+                                    <a href="#"><span>Precisa de ajuda?</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </div>
 </body>
+
 </html>
