@@ -9,16 +9,20 @@
 
     <!--Externals-->
     <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
-    <script src="src/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../../jquery/jquery-3.5.1.min.js"></script>
 
     <!--Internals Styles-->
     <link rel="stylesheet" href="../../styles/login/index.css">
+
+    <!--Internals Js-->
+    <script src="../../components/login/InputsControl.js"></script>
 </head>
 
 <body>
     <div class="home">
         <div class="background-image-home">
             <img src="../../assets/login/background-login.jpg" alt="Background">
+            <div class="content-page">
             <header>
                 <a href="../../../index.html">
                     <div class="logo-header">
@@ -36,22 +40,48 @@
                             <div class="input-components">
                                 <input type="email" name="email-login-user-form" id="email-login-user-form">
                                 <label for="email-login-user-form" class="lb-email">Email ou número de telefone</label>
+                                <span class="warning-email-error hidden">Informe um email ou número de telefone válido.</span>
 
                                 <input type="password" name="pass-login-user-form" id="pass-login-user-form">
                                 <label for="pass-login-user-form" class="lb-pass">Senha</label>
-
-                                <button>Entrar</button>
+                                <span class="warning-pass-error hidden">A senha deve ter entre 4 e 60 caracteres.</span>
+                                <button id="submit-button-login">Entrar</button>
 
                                 <div class="content-user-active-true">
                                     <input type="checkbox" name="user-true-login" id="user-true-login">
                                     <label for="user-true-login">Lembre-se de mim</label>
                                     <a href="#"><span>Precisa de ajuda?</span></a>
                                 </div>
+
+                                <a href="#">
+                                    <div class="facebook-login">
+                                        <div class="logo-fb">
+                                            <img src="../../assets/login/FB-f-Logo__blue_57.png" alt="fblogo" srcset="">
+                                        </div>
+                                        <span>Conectar com Facebook</span>
+                                    </div>
+                                </a>
+
+                                <div class="info-new-user">
+                                    <span>Novo por aqui? <a href="#">Assine agora</a></span>
+                                </div>
+
+                                <div class="recaptcha-warning">
+                                    <span>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. 
+                                        <a href="#">Saiba mais.</a>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
+        </div>
+            <footer>
+                <div class="content-footer">
+
+                </div>
+            </footer>
         </div>
 
     </div>

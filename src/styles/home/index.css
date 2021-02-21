@@ -441,18 +441,17 @@ body{
 details > summary {
     list-style: none;
   }
-
 details > summary::-webkit-details-marker {
     display: none;
   }
 
-  .User-Email-Input{
+.User-Email-Input{
     margin-top: -210px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: #FFFF;
-  }
+}
 
   .input-email{
       display: flex;
