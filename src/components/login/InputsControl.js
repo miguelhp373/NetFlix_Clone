@@ -72,9 +72,19 @@ $(document).ready(function () {
 
     $('#submit-button-login').click(function(){
         if((EmailValid == true)&&(PassValid == true)){
-            alert('ok')
+            location.href = '../Dashboard/index.html';
         }else{
-            alert('no')
+            $('.warning-email-error').removeClass('hidden');
+            $('.warning-pass-error ').css({'margin-top':'80px'})
+            $('#email-login-user-form').css({ 'border-bottom': '2.5px solid #ffa00a' });
+            $('#pass-login-user-form').css({ 'margin-top': '35px' });
+            $('.lb-email').css({ 'margin-top': '-170px' });
+            $('.lb-pass').css({ 'margin-top': '0px' })
+            
+
+            $('.warning-pass-error').removeClass('hidden');
+            $('#pass-login-user-form').css({ 'border-bottom': '2.5px solid #ffa00a' });
+            $('.lb-pass').css({ 'margin-top': '-20px', 'margin-right': '-590px' });
         }
     })
 
