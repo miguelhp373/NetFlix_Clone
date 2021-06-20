@@ -301,3 +301,118 @@ footer>.content-footer{
     opacity: 99%;
     z-index: 999;
 }
+
+
+.separador-05 {
+    position: absolute;
+    margin-top:76px;
+    width: 100%;
+    height: 9px;
+    background-color: #222222;
+}
+
+.footer-end{
+    width: 100%;
+    height: 475px;
+    background-color: #000000;
+}
+
+.container-end{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.col-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.items1{
+    margin-top: 100px;
+    color: #FFFF;
+    height: 300px;
+    margin-left: -170px;
+    margin-right: -190px;
+    cursor: pointer;
+}
+
+.items2{
+    margin-left: -253px;
+    cursor: pointer;
+    color: #FFFF;
+    height: 260px;
+    margin-top: 175px;
+    margin-right: -190px;
+}
+
+.items3,.items4{
+    cursor: pointer;
+    color: #FFFF;
+    height: 260px;
+    margin-top: 175px;
+    margin-left: -170px;
+    margin-right: -190px;
+}
+
+
+
+.items1 h1{
+    color: #757575;
+   font-family: 'Nunito Sans',sans-serif;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.items1 select{
+    width: 154px;
+    height: 53px;
+    background-color: #000000;
+    color: #757575;
+   font-family: 'Nunito Sans',sans-serif;
+   text-align: center;
+   font-size: 20px;
+   border-radius: 2px;
+}
+
+.items1 span{
+   margin-top: 5px;
+   color: #757575;
+   font-family: 'Nunito Sans',sans-serif;
+   font-size: 13px;
+}
+.items2 span{
+    margin-top: 10px;
+    color: #757575;
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 13px;
+    
+ }
+ .items3 span{
+    margin-top: 10px;
+    color: #757575;
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 13px;
+ }
+ .items4 span{
+    margin-top: 10px;
+    color: #757575;
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 13px;
+ }
+
+
+ .items1 span:hover{
+    text-decoration: underline;
+ }
+
+ .items2 span:hover{
+    text-decoration: underline;
+ }
+ .items3 span:hover{
+    text-decoration: underline;
+ }
+ .items4 span:hover{
+    text-decoration: underline;
+ }
