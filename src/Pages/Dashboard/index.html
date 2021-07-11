@@ -19,11 +19,76 @@
 <body>
     <div class="bar-top">
       <ul>
-         <a href="../../../index.html">
-             <li>
-                <img src="/src/assets/logo/logo-netflix.png" alt="logo">
-            </li>
-        </a>
+        <div class="left_menu">
+          <a href="../../../index.html">
+            <li>
+               <img src="/src/assets/logo/logo-netflix.png" alt="logo">
+           </li>
+       </a>
+        </div>
+
+      <div class="menu">
+          <div class="item_right_menu">
+            <a href="#">
+              <li>
+                Inicio
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Séries
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Filmes
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Recentes
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Minha Lista
+              </li>
+            </a>
+          </div>
+      </div>
+
+      <div class="right_options">
+        <div class="options_items">
+          <a href="#">
+            <span><i class="fas fa-search"></i></span>          
+          </a>
+          <a href="#">
+            <span>INFANTIL</span>          
+          </a>
+          <a href="#">
+            <span><i class="fas fa-gift"></i></span>          
+          </a>
+          <a href="#">
+            <span><i class="fas fa-bell"></i><sup class="notification_tot">9+</sup></span>          
+          </a>
+            <a href="#">
+              <div class="account_icon">
+                  <img src="../../assets/dashboard/account_icons/the_witcher_henry_cavil.png" alt="">
+              </div>
+
+            </a>    
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle bg-transparent btn_drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Minha Lista</a></li>
+                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                <li><a class="dropdown-item" href="../../../index.html">Sair</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
       </ul>  
     </div>
     <div class="home-page-dashboard">
@@ -40,86 +105,73 @@
      <span class="sinopse_movie_landing">
       Quatro famílias iniciam uma desesperada busca por respostas quando uma criança desaparece e um complexo mistério envolvendo três gerações começa a se revelar.
     </span>
-    <button class="btn_play"><i class="fas fa-play"></i> &nbsp; Assistir</button>
+    <a href="Pages/MediaPlayer/index.html?id=001">
+      <button class="btn_play"><i class="fas fa-play"></i> &nbsp; Assistir</button>
+    </a>
     <img src="/src/assets/dashboard/serie_icon.png" alt="" srcset="" class="img_serie_name">
    
     <div class="more_movies">
-      <div id="carouselExampleCaptions" class="carousel slide movies" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
+        <div class="row_01_popular">
+          <h1 class="title_first_row">Populares Netflix</h1>
+          <div class="movies01">
+            <ul class="row01_movies_popular">
+              <li>
+                <a href="Pages/MediaPlayer/index.html?id=002">
+                  <img src="/src/assets/dashboard/banners_dashboard/image01.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="Pages/MediaPlayer/index.html?id=003">
+                  <img src="/src/assets/dashboard/banners_dashboard/image02.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="Pages/MediaPlayer/index.html?id=004">
+                  <img src="/src/assets/dashboard/banners_dashboard/image03.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="Pages/MediaPlayer/index.html?id=005">
+                  <img src="/src/assets/dashboard/banners_dashboard/image04.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="Pages/MediaPlayer/index.html?id=006">
+                  <img src="/src/assets/dashboard/banners_dashboard/image05.jpg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="items container-fluid d-flex flex-wrap">
-                <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
+        <div class="row_02_popular">
+          <h1 class="title_second_row">Series Recentes</h1>
+          <div class="movies02">
+            <ul class="row02_movies_popular" id="row02_movies_popular">
+             
+              <!-- <li>
+                <a href="#">
+                  <img src="/src/assets/dashboard/banners_dashboard/image02.jpg" id="item02" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/assets/dashboard/banners_dashboard/image03.jpg" id="item03" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/assets/dashboard/banners_dashboard/image04.jpg"  id="item04" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/src/assets/dashboard/banners_dashboard/image05.jpg" id="item05" alt="">
+                </a>
+              </li> -->
+            </ul>
           </div>
-          <div class="carousel-item">
-            <div class="items container-fluid d-flex flex-wrap">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="items container-fluid d-flex flex-wrap">
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        </div>
     </div>
 </body>
 </html>
