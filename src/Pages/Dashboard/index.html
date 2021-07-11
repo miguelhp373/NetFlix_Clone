@@ -1,118 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NetFlix</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!--bootstrap 5.0-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bb41ae50aa.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../../jquery/jquery-3.5.1.min.js"></script>
     <script src="js/request.js"></script>
     <script src="js/resquestTV.js"></script>
-    
-    <link rel="stylesheet" href="styles/index.css">
-   
-</head>
-<body>
+    <script src="js/components/searchInput.js"></script>
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
     <div class="bar-top">
       <ul>
         <div class="left_menu">
           <a href="../../../index.html">
             <li>
-               <img src="/src/assets/logo/logo-netflix.png" alt="logo">
-           </li>
-       </a>
+              <img src="/src/assets/logo/logo-netflix.png" alt="logo" />
+            </li>
+          </a>
         </div>
 
-      <div class="menu">
+        <div class="menu">
           <div class="item_right_menu">
             <a href="#">
-              <li>
-                Inicio
-              </li>
+              <li>Inicio</li>
+            </a>
+            <a href="Pages/Tv/index.html?page=01">
+              <li>Séries</li>
+            </a>
+            <a href="Pages/Movies/index.html?page=02">
+              <li>Filmes</li>
             </a>
             <a href="#">
-              <li>
-                Séries
-              </li>
+              <li>Recentes</li>
             </a>
             <a href="#">
-              <li>
-                Filmes
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Recentes
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Minha Lista
-              </li>
+              <li>Minha Lista</li>
             </a>
           </div>
-      </div>
-
-      <div class="right_options">
-        <div class="options_items">
-          <a href="#">
-            <span><i class="fas fa-search"></i></span>          
-          </a>
-          <a href="#">
-            <span>INFANTIL</span>          
-          </a>
-          <a href="#">
-            <span><i class="fas fa-gift"></i></span>          
-          </a>
-          <a href="#">
-            <span><i class="fas fa-bell"></i><sup class="notification_tot">9+</sup></span>          
-          </a>
-            <a href="#">
-              <div class="account_icon">
-                  <img src="../../assets/dashboard/account_icons/the_witcher_henry_cavil.png" alt="">
-              </div>
-
-            </a>    
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle bg-transparent btn_drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Minha Lista</a></li>
-                <li><a class="dropdown-item" href="#">Configurações</a></li>
-                <li><a class="dropdown-item" href="../../../index.html">Sair</a></li>
-              </ul>
-            </div>
         </div>
-      </div>
 
-      </ul>  
+        <div class="right_options">
+          <div class="options_items" id="options_items">
+            <a href="#" id="search_field">
+              <span id="showInput"><i class="fas fa-search"></i></span>
+              <!--search_Area-->
+              <span class="hidden" id="search_field_area">
+                <input
+                  type="search"
+                  id="search_input"
+                  class="search_input"
+                  placeholder="Buscar"
+                />
+              </span>
+            </a>
+          
+              <a href="#">
+                <span>INFANTIL</span>
+              </a>
+              <a href="#">
+                <span><i class="fas fa-gift"></i></span>
+              </a>
+              <a href="#">
+                <span
+                  ><i class="fas fa-bell"></i
+                  ><sup class="notification_tot">9+</sup></span
+                >
+              </a>
+
+              <div class="account_contant" id="account_contant">
+                <div class="account_icon">
+                  <img
+                    src="../../assets/dashboard/account_icons/the_witcher_henry_cavil.png"
+                    alt=""
+                  />
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="
+                      btn btn-secondary
+                      dropdown-toggle
+                      bg-transparent
+                      btn_drop
+                    "
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Minha Lista</a></li>
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li>
+                      <a class="dropdown-item" href="../../../index.html"
+                        >Sair</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </ul>
     </div>
     <div class="home-page-dashboard">
-        <img src="/src/assets/dashboard/heroimage.png" alt="">
-
-     
+      <img src="/src/assets/dashboard/heroimage.png" alt="" />
     </div>
-      <span class="name">
-        DARK
-      </span>
-      <span class="info">
-        2017 | 16 | 3 temporadas | Séries policiais
-      </span>
-     <span class="sinopse_movie_landing">
-      Quatro famílias iniciam uma desesperada busca por respostas quando uma criança desaparece e um complexo mistério envolvendo três gerações começa a se revelar.
+    <span class="name"> DARK </span>
+    <span class="info"> 2017 | 16 | 3 temporadas | Séries policiais </span>
+    <span class="sinopse_movie_landing">
+      Quatro famílias iniciam uma desesperada busca por respostas quando uma
+      criança desaparece e um complexo mistério envolvendo três gerações começa
+      a se revelar.
     </span>
     <a href="Pages/MediaDetails/index.html?id=70523&type=tv">
-      <button class="btn_play"><i class="fas fa-play"></i> &nbsp; Assistir</button>
+      <button class="btn_play">
+        <i class="fas fa-play"></i> &nbsp; Assistir
+      </button>
     </a>
-    <img src="/src/assets/dashboard/serie_icon.png" alt="" srcset="" class="img_serie_name">
-   
+    <img
+      src="/src/assets/dashboard/serie_icon.png"
+      alt=""
+      srcset=""
+      class="img_serie_name"
+    />
+
     <div class="more_movies">
-        
       <div class="row_01_popular">
         <h1 class="title_second_row">Séries Populares</h1>
         <div class="tv01">
@@ -121,14 +158,14 @@
           </ul>
         </div>
       </div>
-        <div class="row_02_popular">
-          <h1 class="title_second_row">Filmes Recentes</h1>
-          <div class="movies02">
-            <ul class="row02_movies_popular" id="row02_movies_popular">
-              <!--Os Filme Vão Aqui-->
-            </ul>
-          </div>
+      <div class="row_02_popular">
+        <h1 class="title_second_row">Filmes Recentes</h1>
+        <div class="movies02">
+          <ul class="row02_movies_popular" id="row02_movies_popular">
+            <!--Os Filme Vão Aqui-->
+          </ul>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
