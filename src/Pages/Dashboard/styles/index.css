@@ -196,38 +196,81 @@ a > .account_icon > img{
     outline: 0 !important;
 }
 
-
+/**/
 .title_first_row{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 27px;
-    font-weight: bold;
-    color: #FFFF;
-    margin-left: 30px;
-    margin-top: 20px;
-    padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #FFFF;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding: 20px;
 }
 
-.row01_movies_popular {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: -25px;
+.row01_series_popular {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: -25px;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+
 }
 
-.movies01 > ul > li > a > img {
-    width: 250px;
-    height: auto;
-    margin-left: 10px;
-    padding: 5px;
-    transition: 0.2s;
+.row01_tv_popular{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: -25px;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
-.movies01 > ul > li > a > img:hover{
-    transform: scale(1.2);
+.row01_tv_popular> li:first-child{
+margin-left: 3100px;
 }
+
+.row01_tv_popular::-webkit-scrollbar {
+width:10px;
+height: 10px;
+}
+ 
+.row01_tv_popular::-webkit-scrollbar-track {
+background:#333;
+
+}
+
+ 
+.row01_tv_popular::-webkit-scrollbar-thumb {
+background: #ff1e00;
+}
+
+.tv01 > ul > li > a > img {
+  width: 250px;
+  height: auto;
+  margin-left: 10px;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.tv01 > ul > li > a > img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/**/
+
+
+
 
 
 
@@ -237,7 +280,7 @@ a > .account_icon > img{
     font-size: 27px;
     font-weight: bold;
     color: #FFFF;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 20px;
     padding: 20px;
 }
@@ -284,7 +327,7 @@ a > .account_icon > img{
 }
 
 .movies02 > ul > li > a > img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 

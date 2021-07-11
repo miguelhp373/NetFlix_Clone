@@ -1,8 +1,15 @@
 $(document).ready(function () {
-    //https://api.themoviedb.org/3/discover/movie?api_key=51bdd827768a48612af8d3a0bd074a01
+
+//https://api.themoviedb.org/3/discover/movie?api_key=51bdd827768a48612af8d3a0bd074a01
+
+//https://api.themoviedb.org/3/movie/497698?api_key=51bdd827768a48612af8d3a0bd074a01
+
+//http://image.tmdb.org/t/p/w300/hUzeosd33nzE5MCNsZxCGEKTXaQ.png
+
+
 
 const ApiKey = '?api_key=51bdd827768a48612af8d3a0bd074a01'
-let baseURL = 'https://api.themoviedb.org/3/'
+let baseURL = 'https://api.themoviedb.org/4/'
 
 $(document).ready(function () {
     fetch(baseURL + 'discover/movie' + ApiKey)
@@ -19,7 +26,7 @@ $(document).ready(function () {
 
             for(let i = 2; i < data.results.length ; i++){
                 
-                console.log(data.results[i]) //retorna o array item por item
+                //console.log(data.results[i]) //retorna o array item por item
 
                 rowDiscover = document.getElementById('row02_movies_popular')
                 
@@ -30,7 +37,7 @@ $(document).ready(function () {
                  rowDiscover.innerHTML +=  
                     `
                     <li>
-                        <a href="#">
+                        <a href="Pages/MediaDetails/index.html?id=${data.results[i].id}&type=movie">
                             <img src="${posterimg}" id="item0${i}" alt="">
                         </a>
                     </li>
