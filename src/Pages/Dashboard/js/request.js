@@ -16,23 +16,25 @@ $(document).ready(function () {
         }   
 })
     .then(function (data) {
-//data.results.length
-            for(let i = 2; i < 20 ; i++){
-                console.log(data.results[i])
-                console.log(data.results[i].poster_path)//retorna o array separado
-                //var poster = document.getElementById('row_')
+
+            for(let i = 2; i < data.results.length ; i++){
+                
+                console.log(data.results[i]) //retorna o array item por item
+
                 rowDiscover = document.getElementById('row02_movies_popular')
                 
+                //aqui retorna o link da imagem
                 var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
-                 console.log(posterimg) 
-                rowDiscover.innerHTML +=  `
-                <li>
-                <a href="#">
-                  <img src="${posterimg}" id="item0${i}" alt="">
-                </a>
-              </li>
-                `
-                
+                 
+                //demonstra os filmes na tela
+                 rowDiscover.innerHTML +=  
+                    `
+                    <li>
+                        <a href="#">
+                            <img src="${posterimg}" id="item0${i}" alt="">
+                        </a>
+                    </li>
+                    `  
             }
 
 

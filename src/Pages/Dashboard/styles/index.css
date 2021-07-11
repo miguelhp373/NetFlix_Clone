@@ -260,6 +260,21 @@ a > .account_icon > img{
   margin-left: 3350px;
 }
 
+.row02_movies_popular::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
+  }
+   
+  .row02_movies_popular::-webkit-scrollbar-track {
+  background:#333;
+
+  }
+
+   
+  .row02_movies_popular::-webkit-scrollbar-thumb {
+  background: #ff1e00;
+  }
+
 .movies02 > ul > li > a > img {
     width: 250px;
     height: auto;
@@ -271,3 +286,5 @@ a > .account_icon > img{
 .movies02 > ul > li > a > img:hover{
     transform: scale(1.2);
 }
+
+
