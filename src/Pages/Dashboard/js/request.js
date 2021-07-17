@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
 const ApiKey = '?api_key=51bdd827768a48612af8d3a0bd074a01'
-let baseURL = 'https://api.themoviedb.org/4/'
+let baseURL = 'https://api.themoviedb.org/3/'
 
 $(document).ready(function () {
     fetch(baseURL + 'discover/movie' + ApiKey)

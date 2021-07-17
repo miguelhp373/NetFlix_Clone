@@ -9,6 +9,14 @@ $(document).ready(function () {
 
         $('#search_input').focus()
 
+        if($('#search_input_2').length){
+            $('#search_input_2').focus()
+        }
+
+        if($('#search_input_03').length){
+            $('#search_input_03').focus()
+        }
+
     });
 
     
@@ -27,6 +35,23 @@ $(document).ready(function () {
 
         }
     });
+
+
+    $('#search_input_2').keypress(function(event){
+        var query = $('#search_input_2').val()
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            window.location.href= '../../Pages/Browser/index.html?query=' + query +'&page=browser'
+        }
+    });
+
+    $('#search_input_03').keypress(function(event){
+        var query = $('#search_input_03').val()
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            window.location.href= '../Browser/index.html?query=' + query +'&page=browser'
+        }
+    })
 
 });
 
