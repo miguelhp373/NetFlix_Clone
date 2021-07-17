@@ -26,7 +26,7 @@ $(document).ready(function () {
     
                 for(let i = 2; i < data.results.length ; i++){
                     
-                    console.log(data.results[i]) //retorna o array item por item
+                   // console.log(data.results[i]) //retorna o array item por item
     
                     rowDiscover1 = document.getElementById('row01_tv_popular')
                     
