@@ -47,6 +47,8 @@ $(document).ready(function () {
           ).innerHTML = `<i class="far fa-heart"></i>`;
           $("#btn_favorite").css({ filter: "brightness(100%)" });
 
+          stateFavorite = false
+
     }  
   }
 
