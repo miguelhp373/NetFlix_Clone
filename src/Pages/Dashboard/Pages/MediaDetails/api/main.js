@@ -14,10 +14,10 @@ $(document).ready(function () {
     const urlParams = new URLSearchParams(window.location.search);
     const idMedia = urlParams.get("id");
     const typeURLMedia = urlParams.get("type");
-    console.log(typeURLMedia);
+    //console.log(typeURLMedia);
 
     if (typeURLMedia == "movie") {
-      console.log(typeURLMedia);
+     // console.log(typeURLMedia);
       fetch(baseURL + `${typeURLMedia}/${idMedia}` + ApiKey)
         .then(function (response) {
           if (!response.ok) {
@@ -30,7 +30,7 @@ $(document).ready(function () {
           }
         })
         .then(function (data) {
-          console.log(data); //retorna o array item por item
+         // console.log(data); //retorna o array item por item
 
           //aqui retorna o link da imagem
 

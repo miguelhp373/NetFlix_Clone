@@ -1,17 +1,29 @@
-body{
-    background-color: black;
-    height: 100vh;
+body {
+  background-color: black;
+  height: 100vh;
 }
 
-.bar-top{
-    border-bottom: 1px solid #FFF;
+.bar-top {
+  border-bottom: 1px solid #fff;
 }
 
-.col > a > img{
-    width: 300px;
-    transition: 0.2s;
+.col > a > img {
+  width: 300px;
+  transition: 0.2s;
 }
 
-.col > a > img:hover{
-    transform: scale(1.1);
+.col > a > img:hover {
+  transform: scale(1.1);
+}
+
+.title_page {
+  margin: 14px;
+  margin-bottom: -20px;
+}
+
+.title_page > h2{
+  color: rgb(221, 221, 221);
+  font-size: 23px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }

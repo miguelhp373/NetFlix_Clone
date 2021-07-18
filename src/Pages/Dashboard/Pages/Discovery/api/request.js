@@ -20,6 +20,8 @@ $(document).ready(function () {
             }   
     })
         .then(function (data) {
+
+            document.getElementById('text_title_page').innerHTML = `Inicio > Séries`
     
                 for(let i = 2; i < data.results.length ; i++){
             
@@ -71,6 +73,7 @@ $(document).ready(function () {
             }   
     })
         .then(function (data) {
+            document.getElementById('text_title_page').innerHTML = `Inicio > Filmes`
     
                 for(let i = 2; i < data.results.length ; i++){
             

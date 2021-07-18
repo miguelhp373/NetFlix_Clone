@@ -13,10 +13,10 @@ $(document).ready(function () {
         const urlParams = new URLSearchParams(window.location.search);
         const idMedia = urlParams.get('id');
         const typeURLMedia = urlParams.get('type')
-        console.log(typeURLMedia)
+        //console.log(typeURLMedia)
 
         if(typeURLMedia == 'movie'){
-            console.log(typeURLMedia)
+           // console.log(typeURLMedia)
             fetch(baseURL + `${typeURLMedia}/${idMedia}/videos` + ApiKey)
             .then(function(response){
                 if (!response.ok) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
         })
             .then(function (data) {
                 
-                        console.log(data.results[0]) //retorna o array item por item
+                        //console.log(data.results[0]) //retorna o array item por item
                         const trailer = document.getElementById('trailer_movie_media')
                         trailer.innerHTML += `
                         <iframe width="727" height="409" src="https://www.youtube.com/embed/${data.results[0].key}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -38,7 +38,7 @@ $(document).ready(function () {
         }
 
         if(typeURLMedia == 'tv'){
-            console.log(typeURLMedia)
+           // console.log(typeURLMedia)
             fetch(baseURL + `${typeURLMedia}/${idMedia}/videos` + ApiKey)
             .then(function(response){
                 if (!response.ok) {
@@ -51,7 +51,7 @@ $(document).ready(function () {
         })
             .then(function (data) {
                 
-                        console.log(data.results[0].key) //retorna o array item por item
+                       // console.log(data.results[0].key) //retorna o array item por item
                         
                         const trailer = document.getElementById('trailer_movie_media')
                         trailer.innerHTML += `
