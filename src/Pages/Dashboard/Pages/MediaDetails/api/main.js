@@ -67,7 +67,7 @@ $(document).ready(function () {
     }
 
     if (typeURLMedia == "tv") {
-      console.log(typeURLMedia);
+    
       fetch(baseURL + `${typeURLMedia}/${idMedia}` + ApiKey)
         .then(function (response) {
           if (!response.ok) {

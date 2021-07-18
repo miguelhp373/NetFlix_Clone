@@ -26,6 +26,7 @@
     <script src="js/request.js"></script>
     <script src="js/resquestTV.js"></script>
     <script src="js/components/searchInput.js"></script>
+    <script src="js/components/scrollButton.js"></script>
 
     <link rel="stylesheet" href="styles/index.css" />
   </head>
@@ -54,7 +55,7 @@
             <a href="#">
               <li>Recentes</li>
             </a>
-            <a href="#">
+            <a href="Pages/MyList/index.html">
               <li>Minha Lista</li>
             </a>
           </div>
@@ -112,7 +113,7 @@
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
                   >
-                    <li><a class="dropdown-item" href="#">Minha Lista</a></li>
+                    <li><a class="dropdown-item" href="Pages/MyList/index.html">Minha Lista</a></li>
                     <li><a class="dropdown-item" href="#">Configurações</a></li>
                     <li>
                       <a class="dropdown-item" href="../../../index.html"
@@ -137,8 +138,8 @@
       criança desaparece e um complexo mistério envolvendo três gerações começa
       a se revelar.
     </span>
-    <a href="Pages/MediaDetails/index.html?id=70523&type=tv">
-      <button class="btn_play">
+    <a href="Pages/MediaDetails/index.html?id=70523&type=tv"> 
+      <button class="btn_play" id="btn_play">
         <i class="fas fa-play"></i> &nbsp; Assistir
       </button>
     </a>
@@ -152,14 +153,35 @@
     <div class="more_movies">
       <div class="row_01_popular">
         <h1 class="title_second_row">Séries Populares</h1>
+
+        <div class="buttons_tv_scroll">
+          <button id="button_scroll_left_01" class="button_scroll_left_01">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="button_scroll_right_01" class="button_scroll_right_01">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        
         <div class="tv01">
           <ul class="row01_tv_popular" id="row01_tv_popular">
             <!--Os Filme Vão Aqui-->
+           
           </ul>
         </div>
       </div>
       <div class="row_02_popular">
         <h1 class="title_second_row">Filmes Recentes</h1>
+
+        <div class="buttons_movies_scroll">
+          <button id="button_scroll_left_02" class="button_scroll_left_02">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="button_scroll_right_02" class="button_scroll_right_02">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
         <div class="movies02">
           <ul class="row02_movies_popular" id="row02_movies_popular">
             <!--Os Filme Vão Aqui-->

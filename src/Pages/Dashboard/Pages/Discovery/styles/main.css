@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.bar-top{
+    border-bottom: 1px solid #FFF;
+}
+
+.col > a > img{
+    width: 300px;
+    transition: 0.2s;
+}
+
+.col > a > img:hover{
+    transform: scale(1.1);
+}

@@ -53,7 +53,7 @@ body {
 
 .menu > .item_right_menu > a {
   margin-left: 25px;
-  color: #ffff;
+  color: #FFF;
   text-decoration: none;
   font-size: 20px;
   transition: 0.2s;
@@ -220,7 +220,6 @@ body {
 .row01_series_popular {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   padding: 20px;
   width: 100%;
@@ -234,19 +233,16 @@ body {
 .row01_tv_popular{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   padding: 20px;
   width: 100%;
   margin-top: -25px;
+  scroll-behavior: smooth;
 
   overflow-y: hidden;
   overflow-x: scroll;
 }
 
-.row01_tv_popular> li:first-child{
-margin-left: 3100px;
-}
 
 .row01_tv_popular::-webkit-scrollbar {
 width:10px;
@@ -298,20 +294,18 @@ background: #ff1e00;
 .row02_movies_popular {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     padding: 20px;
     width: 100%;
     margin-top: -25px;
 
+    scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: scroll;
   
 }
 
-.row02_movies_popular> li:first-child{
-  margin-left: 3350px;
-}
+
 
 .row02_movies_popular::-webkit-scrollbar {
   width:10px;
@@ -351,5 +345,57 @@ background: #ff1e00;
 .account_contant{
   margin-left: -210px;
   margin-top: 3px;
+}
+
+.buttons_tv_scroll{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 45px;
+}
+
+.buttons_tv_scroll > button{
+  background-color: black;
+  color: #FFF;
+  z-index: 999;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  opacity: 45%;
+  transition: 0.2s;
+}
+
+.buttons_tv_scroll > button:hover{
+  opacity: 80%;
+}
+
+
+
+.buttons_movies_scroll{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 45px;
+}
+
+.buttons_movies_scroll > button{
+  background-color: black;
+  color: #FFF;
+  z-index: 999;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  opacity: 45%;
+  transition: 0.2s;
+}
+
+.buttons_movies_scroll > button:hover{
+  opacity: 80%;
 }
 

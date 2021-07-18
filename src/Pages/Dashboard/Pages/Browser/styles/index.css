@@ -177,6 +177,7 @@ body {
   width: 100%;
   margin-top: -25px;
 
+  scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: scroll;
   background-color: black;
@@ -191,6 +192,7 @@ body {
   width: 100%;
   margin-top: -25px;
 
+  scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: scroll;
   background-color: black;
@@ -256,6 +258,7 @@ background: #ff1e00;
     width: 100%;
     margin-top: -25px;
 
+    scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: scroll;
     direction: ltr;
@@ -304,3 +307,55 @@ background: #ff1e00;
   margin-top: 3px;
 }
 
+
+.buttons_tv_scroll{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 45px;
+}
+
+.buttons_tv_scroll > button{
+  background-color: black;
+  color: #FFF;
+  z-index: 999;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  opacity: 45%;
+  transition: 0.2s;
+}
+
+.buttons_tv_scroll > button:hover{
+  opacity: 80%;
+}
+
+
+
+.buttons_movies_scroll{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 45px;
+}
+
+.buttons_movies_scroll > button{
+  background-color: black;
+  color: #FFF;
+  z-index: 999;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 32px;
+  opacity: 45%;
+  transition: 0.2s;
+}
+
+.buttons_movies_scroll > button:hover{
+  opacity: 80%;
+}

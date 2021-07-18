@@ -31,7 +31,8 @@ $(document).ready(function () {
                     rowDiscover1 = document.getElementById('row01_tv_popular')
                     
                     //aqui retorna o link da imagem
-                    var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
+                    var posterimg = `http://image.tmdb.org/t/p/original${data.results[i].backdrop_path}`
+                    //var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
                      
                     //demonstra os filmes na tela
                      rowDiscover1.innerHTML +=  

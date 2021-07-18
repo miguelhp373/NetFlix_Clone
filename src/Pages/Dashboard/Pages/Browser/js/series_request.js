@@ -51,8 +51,8 @@ $(document).ready(function () {
                 for(let i = 2; i < data.results.length ; i++){
                     
                     //aqui retorna o link da imagem
-                    var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
-                     
+                    //var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
+                    var posterimg = `http://image.tmdb.org/t/p/original${data.results[i].backdrop_path}` 
                     //demonstra os filmes na tela
                     rowtvFind.innerHTML +=  
                         `
