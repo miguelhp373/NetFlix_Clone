@@ -29,105 +29,92 @@
     <script src="js/components/scrollButton.js"></script>
 
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="../../styles/root/navbar.css" />
   </head>
+
   <body>
-    <div class="bar-top">
-      <ul>
-        <div class="left_menu">
-          <a href="../../../index.html">
-            <li>
-              <img src="/src/assets/logo/logo-netflix.png" alt="logo" />
-            </li>
+
+    <div class="navbar-top">
+      <div class="logo_netflix">
+        <img src="../../assets/logo/logo-netflix.png" alt="" />
+        <div class="left_item_nav">
+          <a href="#" class="links_hover">
+            <span>Inicio</span>
+          </a>
+          <a href="Pages/Discovery/index.html?page=1" class="links_hover">
+            <span>Séries</span>
+          </a>
+          <a href="Pages/Discovery/index.html?page=2" class="links_hover">
+            <span>Filmes</span>
+          </a>
+          <a href="#" class="links_hover">
+            <span>Recentes</span>
+          </a>
+          <a href="Pages/MyList/index.html?page=favorites" class="links_hover">
+            <span>Minha Lista</span>
           </a>
         </div>
+      </div>
 
-        <div class="menu">
-          <div class="item_right_menu">
-            <a href="#">
-              <li>Inicio</li>
-            </a>
-            <a href="Pages/Discovery/index.html?page=01">
-              <li>Séries</li>
-            </a>
-            <a href="Pages/Discovery/index.html?page=02">
-              <li>Filmes</li>
-            </a>
-            <a href="#">
-              <li>Recentes</li>
-            </a>
-            <a href="Pages/MyList/index.html">
-              <li>Minha Lista</li>
-            </a>
+      <div class="right_item_nav">
+        <a id="show_field_search">
+          <span id="search_area">
+            <input
+              type="search"
+              id="search_input"
+              class="search_input hidden"
+              placeholder="Buscar"
+            />
+            <i class="fas fa-search search_icon"></i>
+          </span>
+        </a>
+
+        <a href="#" class="links_hover">
+          <span>INFANTIL</span>
+        </a>
+
+        <a href="#" class="links_hover">
+          <span>
+            <i class="fas fa-gift"></i>
+          </span>
+        </a>
+        <a href="#" class="links_hover">
+          <span>
+            <i class="fas fa-bell"></i>
+            <sup class="notification_tot">9+</sup>
+          </span>
+        </a>
+
+        <div class="account_icon">
+          <img
+            src="../../assets/dashboard/account_icons/the_witcher_henry_cavil.png"
+            alt=""
+          />
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle bg-transparent btn_drop"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="Pages/MyList/index.html"
+                  >Minha Lista</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li>
+                <a class="dropdown-item" href="../../../index.html"> Sair </a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="right_options">
-          <div class="options_items" id="options_items">
-            <a href="#" id="search_field">
-              <span id="showInput"><i class="fas fa-search"></i></span>
-              <!--search_Area-->
-              <span class="hidden" id="search_field_area">
-                <input
-                  type="search"
-                  id="search_input"
-                  class="search_input"
-                  placeholder="Buscar"
-                />
-              </span>
-            </a>
-          
-              <a href="#">
-                <span>INFANTIL</span>
-              </a>
-              <a href="#">
-                <span><i class="fas fa-gift"></i></span>
-              </a>
-              <a href="#">
-                <span
-                  ><i class="fas fa-bell"></i
-                  ><sup class="notification_tot">9+</sup></span
-                >
-              </a>
-
-              <div class="account_contant" id="account_contant">
-                <div class="account_icon">
-                  <img
-                    src="../../assets/dashboard/account_icons/the_witcher_henry_cavil.png"
-                    alt=""
-                  />
-                </div>
-                <div class="dropdown">
-                  <button
-                    class="
-                      btn btn-secondary
-                      dropdown-toggle
-                      bg-transparent
-                      btn_drop
-                    "
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  ></button>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="Pages/MyList/index.html">Minha Lista</a></li>
-                    <li><a class="dropdown-item" href="#">Configurações</a></li>
-                    <li>
-                      <a class="dropdown-item" href="../../../index.html"
-                        >Sair</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-        </div>
-      </ul>
+      </div>
     </div>
+
+    <a href="Pages/Browser/index.html"></a>
     <div class="home-page-dashboard">
       <img src="/src/assets/dashboard/heroimage.png" alt="" />
     </div>
@@ -138,7 +125,7 @@
       criança desaparece e um complexo mistério envolvendo três gerações começa
       a se revelar.
     </span>
-    <a href="Pages/MediaDetails/index.html?id=70523&type=tv"> 
+    <a href="Pages/MediaDetails/index.html?id=70523&type=tv">
       <button class="btn_play" id="btn_play">
         <i class="fas fa-play"></i> &nbsp; Assistir
       </button>
@@ -162,11 +149,10 @@
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
-        
+
         <div class="tv01">
           <ul class="row01_tv_popular" id="row01_tv_popular">
             <!--Os Filme Vão Aqui-->
-           
           </ul>
         </div>
       </div>

@@ -30,7 +30,7 @@ $(document).ready(function () {
             .then(function (data) {
                 
                         //console.log(data.results[0]) //retorna o array item por item
-                        const trailer = document.getElementById('trailer_movie_media')
+                        const trailer = document.getElementById('iframe_trailer')
                         trailer.innerHTML += `
                         <iframe width="727" height="409" src="https://www.youtube.com/embed/${data.results[0].key}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         `      
@@ -53,7 +53,7 @@ $(document).ready(function () {
                 
                        // console.log(data.results[0].key) //retorna o array item por item
                         
-                        const trailer = document.getElementById('trailer_movie_media')
+                        const trailer = document.getElementById('iframe_trailer')
                         trailer.innerHTML += `
                             <iframe width="727" height="409" src="https://www.youtube.com/embed/${data.results[0].key}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         `

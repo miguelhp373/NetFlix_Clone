@@ -7,25 +7,6 @@ body {
   list-style: none;
 }
 
-.bar-top {
-  width: 100%;
-  height: 90px;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #FFFF;
-}
-
-
-.bar-top > ul > .left_menu:first-child {
-  padding: 20px 0px 0px 20px;
-}
-
-.bar-top > ul > .left_menu > a > li > img {
-  width: 150px;
-  height: 50px;
-}
-
 .home-page-dashboard > img {
   width: 100%;
   height: auto;
@@ -36,65 +17,6 @@ body {
   position: absolute;
 }
 
-.left_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.menu {
-  margin-top: -35px;
-  margin-left: 200px;
-}
-
-.item_right_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.menu > .item_right_menu > a {
-  margin-left: 25px;
-  color: #ffff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.2s;
-}
-
-.menu > .item_right_menu > a:hover {
-  filter: brightness(60%);
-}
-
-
-
-.right_options {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.options_items {
-  margin-top: -30px;
-  margin-right: -615px;
-}
-
-.right_options > .options_items > a {
-  margin-left: 25px;
-  color: #ffff;
-  text-decoration: none;
-  font-size: 20px;
-  transition: 0.2s;
-}
-
-.search_input{
-  border-radius: 3px;
-  border: none;
-  outline: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding-left: 4px;
-}
-
-
 .name {
   position: absolute;
   color: #ffff;
@@ -103,11 +25,6 @@ body {
   font-weight: 500;
   font-size: 18px;
 }
-
-
-
-
-
 
 .more_movies {
   background-color: black;
@@ -124,46 +41,17 @@ body {
   margin-top: 45px;
 }
 
-.notification_tot {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  color: #ffff;
-  border-radius: 30px;
-  padding: 1px;
-}
-
-.account_icon {
-  width: 40px;
-  height: 38px;
-  background-color: gray;
-  margin-left: 506px;
-  margin-top: -37px;
-}
-
-.account_icon > img{
-    width: 40px;
-    height: 38px;
-    border-radius: 12px;
-}
-
-.dropdown {
-  margin-top: -35px;
-  margin-left: 540px;
-  position: absolute;
-}
-
-.btn{
-    border: none  !important;
-    outline: 0 !important;
+.btn {
+  border: none !important;
+  outline: 0 !important;
 }
 
 /**/
-.title_first_row{
+.title_first_row {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 27px;
   font-weight: bold;
-  color: #FFFF;
+  color: #ffff;
   margin-left: 10px;
   margin-top: 20px;
   padding: 20px;
@@ -181,10 +69,9 @@ body {
   overflow-y: hidden;
   overflow-x: scroll;
   background-color: black;
-  
 }
 
-.row01_tv_popular{
+.row01_tv_popular {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,20 +85,17 @@ body {
   background-color: black;
 }
 
-
 .row01_tv_popular::-webkit-scrollbar {
-width:10px;
-height: 10px;
+  width: 10px;
+  height: 10px;
 }
- 
+
 .row01_tv_popular::-webkit-scrollbar-track {
-background:#333;
-
+  background: #333;
 }
 
- 
 .row01_tv_popular::-webkit-scrollbar-thumb {
-background: #ff1e00;
+  background: #ff1e00;
 }
 
 .tv01 > ul > li > a > img {
@@ -222,104 +106,92 @@ background: #ff1e00;
   transition: 0.2s;
 }
 
-.tv01 > ul > li > a > img:hover{
+.tv01 > ul > li > a > img:hover {
   transform: scale(1.1);
 }
 
-
-
 /**/
 
-
-
-.row_02_popular{
+.row_02_popular {
   background-color: black;
 }
 
-
-
-.title_second_row{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 27px;
-    font-weight: bold;
-    color: #FFFF;
-    margin-left: 10px;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: black;
-
+.title_second_row {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #ffff;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: black;
 }
 
 .row02_movies_popular {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: -25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: -25px;
 
-    scroll-behavior: smooth;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    direction: ltr;
-    background-color: black;
-    
-  
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  direction: ltr;
+  background-color: black;
 }
 
 .row02_movies_popular::-webkit-scrollbar {
-  width:10px;
+  width: 10px;
   height: 10px;
-  }
-   
-  .row02_movies_popular::-webkit-scrollbar-track {
-  background:#333;
+}
 
-  }
+.row02_movies_popular::-webkit-scrollbar-track {
+  background: #333;
+}
 
-   
-  .row02_movies_popular::-webkit-scrollbar-thumb {
+.row02_movies_popular::-webkit-scrollbar-thumb {
   background: #ff1e00;
-  }
+}
 
 .movies02 > ul > li > a > img {
-    width: 250px;
-    height: auto;
-    margin-left: 10px;
-    padding: 5px;
-    transition: 0.2s;
+  width: 250px;
+  height: auto;
+  margin-left: 10px;
+  padding: 5px;
+  transition: 0.2s;
 }
 
-.movies02 > ul > li > a > img:hover{
-    transform: scale(1.1);
+.movies02 > ul > li > a > img:hover {
+  transform: scale(1.1);
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.container_right{
+.container_right {
   margin-left: 10px;
 }
 
-.account_contant{
+.account_contant {
   margin-left: -210px;
   margin-top: 3px;
 }
 
-
-.buttons_tv_scroll{
+.buttons_tv_scroll {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: absolute;
-  margin-top: 45px;
+  margin-top: 145px;
 }
 
-.buttons_tv_scroll > button{
+.buttons_tv_scroll > button {
   background-color: black;
-  color: #FFF;
+  color: #fff;
   z-index: 999;
   border: none;
   width: 60px;
@@ -329,24 +201,22 @@ background: #ff1e00;
   transition: 0.2s;
 }
 
-.buttons_tv_scroll > button:hover{
+.buttons_tv_scroll > button:hover {
   opacity: 80%;
 }
 
-
-
-.buttons_movies_scroll{
+.buttons_movies_scroll {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: absolute;
-  margin-top: 45px;
+  margin-top: 145px;
 }
 
-.buttons_movies_scroll > button{
+.buttons_movies_scroll > button {
   background-color: black;
-  color: #FFF;
+  color: #fff;
   z-index: 999;
   border: none;
   width: 60px;
@@ -356,6 +226,6 @@ background: #ff1e00;
   transition: 0.2s;
 }
 
-.buttons_movies_scroll > button:hover{
+.buttons_movies_scroll > button:hover {
   opacity: 80%;
 }

@@ -15,110 +15,88 @@
     <script src="api/requestTrailer.js"></script>
     <script src="../../js/components/searchInput.js"></script>
     <script src="api/Favorites.js"></script>
-    <!-- <script src="api/addMyList.js"></script> -->
-    <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="styles/index.css"> -->
+
+    <link rel="stylesheet" href="../../../../styles/root/navbar.css">
+    <link rel="stylesheet" href="styles/main.css">
     
 
 </head>
 <body>
-  <div class="bar-top">
-    <ul>
-      <div class="left_menu">
-        <a href="../../../index.html">
-          <li>
-            <img src="/src/assets/logo/logo-netflix.png" alt="logo" />
-          </li>
+  <div class="navbar-top">
+    <div class="logo_netflix">
+      <img src="../../../../assets/logo/logo-netflix.png" alt="">
+      <div class="left_item_nav">
+        <a href="../../index.html" class="links_hover">
+          <span>Inicio</span>
+        </a>
+        <a href="../Discovery/index.html?page=01" class="links_hover">
+          <span>Séries</span>
+        </a>
+        <a href="../Discovery/index.html?page=02" class="links_hover">
+          <span>Filmes</span>
+        </a>
+        <a href="#" class="links_hover">
+          <span>Recentes</span>
+        </a>
+        <a href="#" class="links_hover">
+          <span>Minha Lista</span>
         </a>
       </div>
+    </div>
 
-      <div class="menu">
-        <div class="item_right_menu">
-          <a href="../../../Dashboard/index.html">
-            <li>Inicio</li>
-          </a>
-          <a href="Pages/Tv/index.html?page=01">
-            <li>Séries</li>
-          </a>
-          <a href="Pages/Movies/index.html?page=02">
-            <li>Filmes</li>
-          </a>
-          <a href="#">
-            <li>Recentes</li>
-          </a>
-          <a href="#">
-            <li>Minha Lista</li>
-          </a>
+    <div class="right_item_nav">
+      <a id="show_field_search">
+        <span id="search_area">
+          <input type="search" id="search_input" class="search_input hidden" placeholder="Buscar" />
+          <i class="fas fa-search search_icon"></i>
+        </span>
+      </a>
+
+      <a href="#" class="links_hover">
+        <span>INFANTIL</span>
+      </a>
+
+      <a href="#" class="links_hover">
+        <span>
+          <i class="fas fa-gift"></i>
+        </span>
+      </a>
+      <a href="#" class="links_hover">
+        <span>
+          <i class="fas fa-bell"></i>
+          <sup class="notification_tot">9+</sup>
+        </span>
+      </a>
+
+      <div class="account_icon">
+        <img src="../../../../assets/dashboard/account_icons/the_witcher_henry_cavil.png" alt="" />
+        <div class="dropdown">
+          <button class="
+                  btn btn-secondary
+                  dropdown-toggle
+                  bg-transparent
+                  btn_drop
+                " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Minha Lista</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li>
+              <a class="dropdown-item" href="../../../index.html">
+                Sair
+              </a>
+            </li>
+          </ul>
+
         </div>
       </div>
 
-      <div class="right_options">
-        <div class="options_items" id="options_items">
-          <a href="#" id="search_field">
-            <span id="showInput"><i class="fas fa-search"></i></span>
-            <!--search_Area-->
-            <span class="hidden" id="search_field_area">
-              <input
-                type="search"
-                id="search_input_2"
-                class="search_input"
-                placeholder="Buscar"
-              />
-            </span>
-          </a>
-        
-            <a href="#">
-              <span>INFANTIL</span>
-            </a>
-            <a href="#">
-              <span><i class="fas fa-gift"></i></span>
-            </a>
-            <a href="#">
-              <span
-                ><i class="fas fa-bell"></i
-                ><sup class="notification_tot">9+</sup></span
-              >
-            </a>
 
-            <div class="account_contant" id="account_contant">
-              <div class="account_icon">
-                <img
-                  src="../../../../assets/dashboard/account_icons/the_witcher_henry_cavil.png"
-                  alt=""
-                />
-              </div>
-              <div class="dropdown">
-                <button
-                  class="
-                    btn btn-secondary
-                    dropdown-toggle
-                    bg-transparent
-                    btn_drop
-                  "
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                ></button>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton1"
-                >
-                  <li><a class="dropdown-item" href="#">Minha Lista</a></li>
-                  <li><a class="dropdown-item" href="#">Configurações</a></li>
-                  <li>
-                    <a class="dropdown-item" href="../../../index.html"
-                      >Sair</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-      </div>
-    </ul>
+    </div>
   </div>
+  
     <main>
         <div class="container_body">
             <header>
@@ -128,25 +106,35 @@
                   <i class="far fa-heart"></i>
                 </button>
               </div>
+              <div class="container_main">
                 <div class="backdrop_image" id="backdrop_image">
-                    <!--Aqui vai o backdrop do filme-->
+                  <!-- Aqui Vai A Imagem de Fundo -->
                 </div>
-                <div class="poster_image" id="poster_image">
-                    <!--Aquo Vai o Poster-->
+                <div class="container_content">
+                  <div class="col_left_content">
+                    <div class="poster_image" id="poster_image">
+                      <!-- Aqui Vai o Poster do Filme -->
+                    </div>
+                    <span id="rating_text">
+                      <!-- Aqui Vai a Nota do Filme -->
+                    </span>
+                  </div>
+                  <div class="col_right_content">
+                      <div class="content_Text">
+                        <h1 class="title_overview" id='title_overview'>
+                          <!-- Aqui Vai o Titulo e Ano do Filme -->
+                        </h1>
+                        <p class="text_overview" id="text_overview">
+                          <!-- Aqui Vai a Sinopse do Filme -->
+                        </p>
+                      </div>
+                      <div class="iframe_trailer" id="iframe_trailer">
+                        <!-- Aqui Vai o Trailer -->
+                      </div>
+                  </div>
                 </div>
-                <div class="title_media" id="title_media">
-                    <!--Aqui Vai o Titulo-->
-                </div>
-                
-                <div class="overview_media" id="overview_media">
-                    <!--Aqui Vai a Sinopse-->
-                </div>
-                <div class="rating_media" id="rating_media">
-                   <!--Aqui Vai a Nota-->
-                </div>
-                <div class="trailer_movie_media" id="trailer_movie_media">
-                  <!--trailer-->
-                </div>
+              </div>
+              
             </header>
         </div>
     </main>

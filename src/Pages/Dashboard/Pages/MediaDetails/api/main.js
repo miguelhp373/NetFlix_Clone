@@ -30,15 +30,15 @@ $(document).ready(function () {
           }
         })
         .then(function (data) {
-         // console.log(data); //retorna o array item por item
+          console.log(data); //retorna o array item por item
 
           //aqui retorna o link da imagem
 
           const backdropimage = document.getElementById("backdrop_image");
           const posterimage = document.getElementById("poster_image");
-          const titleMedia = document.getElementById("title_media");
-          const overview = document.getElementById("overview_media");
-          const rating = document.getElementById("rating_media");
+          const titleMedia = document.getElementById("title_overview");
+          const overview = document.getElementById("text_overview");
+          const rating = document.getElementById("rating_text");
 
           backdropimage.innerHTML += `
                             <img src="http://image.tmdb.org/t/p/original${data.backdrop_path}" id="poster_path${data.id}" alt="${data.original_title}">
@@ -70,6 +70,7 @@ $(document).ready(function () {
     
       fetch(baseURL + `${typeURLMedia}/${idMedia}` + ApiKey)
         .then(function (response) {
+
           if (!response.ok) {
             throw new Error(
               "Erro Ao Tentar Se Comunicar com o Servidor! Status " +
@@ -80,15 +81,14 @@ $(document).ready(function () {
           }
         })
         .then(function (data) {
-          console.log(data); //retorna o array item por item
 
-          //aqui retorna o link da imagem
+          console.log(baseURL + `${typeURLMedia}/${idMedia}` + ApiKey)
 
           const backdropimage = document.getElementById("backdrop_image");
           const posterimage = document.getElementById("poster_image");
-          const titleMedia = document.getElementById("title_media");
-          const overview = document.getElementById("overview_media");
-          const rating = document.getElementById("rating_media");
+          const titleMedia = document.getElementById("title_overview");
+          const overview = document.getElementById("text_overview");
+          const rating = document.getElementById("rating_text");
 
           backdropimage.innerHTML += `
                             <img src="http://image.tmdb.org/t/p/original${data.backdrop_path}" id="poster_path${data.id}" alt="${data.original_title}">

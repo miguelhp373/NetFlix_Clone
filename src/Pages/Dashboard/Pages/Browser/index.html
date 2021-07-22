@@ -30,98 +30,81 @@
     <script src="../../../Dashboard/js/components/scrollButton.js"></script>
 
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="../../../../styles/root/navbar.css">
   </head>
   <body>
-    <div class="bar-top">
-      <ul>
-        <div class="left_menu">
-          <a href="#">
-            <li>
-              <img src="/src/assets/logo/logo-netflix.png" alt="logo" />
-            </li>
+    
+
+    <div class="navbar-top">
+      <div class="logo_netflix">
+        <img src="../../../../assets/logo/logo-netflix.png" alt="">
+        <div class="left_item_nav">
+          <a href="../../index.html" class="links_hover">
+            <span>Inicio</span>
+          </a>
+          <a href="../Discovery/index.html?page=01" class="links_hover">
+            <span>Séries</span>
+          </a>
+          <a href="../Discovery/index.html?page=02" class="links_hover">
+            <span>Filmes</span>
+          </a>
+          <a href="#" class="links_hover">
+            <span>Recentes</span>
+          </a>
+          <a href="#" class="links_hover">
+            <span>Minha Lista</span>
           </a>
         </div>
-
-        <div class="menu">
-          <div class="item_right_menu">
-            <a href="../../index.html">
-              <li>Inicio</li>
-            </a>
-            <a href="#">
-              <li>Séries</li>
-            </a>
-            <a href="#">
-              <li>Filmes</li>
-            </a>
-            <a href="#">
-              <li>Recentes</li>
-            </a>
-            <a href="#">
-              <li>Minha Lista</li>
-            </a>
-          </div>
-        </div>
-
-        <div class="right_options">
-          <div class="options_items" id="options_items">
-            <a href="#" id="search_field">
-              <span id="showInput"><i class="fas fa-search"></i></span>
-              <!--search_Area-->
-              <span class="hidden" id="search_field_area">
-                <input
-                  type="search"
-                  id="search_input"
-                  class="search_input"
-                  placeholder="Buscar"
-                />
-              </span>
-            </a>
-
-            <a href="#">
-              <span>INFANTIL</span>
-            </a>
-            <a href="#">
-              <span><i class="fas fa-gift"></i></span>
-            </a>
-            <a href="#">
-              <span
-                ><i class="fas fa-bell"></i
-                ><sup class="notification_tot">9+</sup></span
-              >
-            </a>
-
-            <div class="account_contant" id="account_contant">
-              <div class="account_icon">
-                <img
-                  src="../../../../assets/dashboard/account_icons/the_witcher_henry_cavil.png"
-                  alt=""
-                />
-              </div>
-              <div class="dropdown">
-                <button
-                  class="
+      </div>
+  
+      <div class="right_item_nav">
+        <a id="show_field_search">
+          <span id="search_area">
+            <input type="search" id="search_input" class="search_input hidden" placeholder="Buscar" />
+            <i class="fas fa-search search_icon"></i>
+          </span>
+        </a>
+  
+        <a href="#" class="links_hover">
+          <span>INFANTIL</span>
+        </a>
+  
+        <a href="#" class="links_hover">
+          <span>
+            <i class="fas fa-gift"></i>
+          </span>
+        </a>
+        <a href="#" class="links_hover">
+          <span>
+            <i class="fas fa-bell"></i>
+            <sup class="notification_tot">9+</sup>
+          </span>
+        </a>
+  
+        <div class="account_icon">
+          <img src="../../../../assets/dashboard/account_icons/the_witcher_henry_cavil.png" alt="" />
+          <div class="dropdown">
+            <button class="
                     btn btn-secondary
                     dropdown-toggle
                     bg-transparent
                     btn_drop
-                  "
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                ></button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Minha Lista</a></li>
-                  <li><a class="dropdown-item" href="#">Configurações</a></li>
-                  <li>
-                    <a class="dropdown-item" href="../../../index.html">Sair</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                  " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Minha Lista</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+              <li>
+                <a class="dropdown-item" href="../../../index.html">
+                  Sair
+                </a>
+              </li>
+            </ul>
+  
           </div>
         </div>
-      </ul>
+  
+  
+      </div>
     </div>
     <!--Main-->
     <main>
@@ -145,7 +128,7 @@
           </div>
         </div>
         <div class="row_02_popular">
-          <h1 class="title_second_row">Filmes Recentes</h1>
+          <h1 class="title_second_row">Filmes Populares</h1>
 
           <div class="buttons_movies_scroll">
             <button id="button_scroll_left_02" class="button_scroll_left_02">

@@ -30,7 +30,7 @@ $(document).ready(function () {
                     //aqui retorna o link da imagem
                     var posterimg = 'http://image.tmdb.org/t/p/w300' + data.results[i].poster_path
              
-                    //demonstra os filmes na tela
+                    
 
                    
         
@@ -48,7 +48,7 @@ $(document).ready(function () {
                         tvDiscovery.innerHTML += 
                         `
                         <div class="col mt-4 p-2" id='item0${i}'>
-                            <a href="../../Pages/MediaDetails/index.html?id=${data.results[i].id}&type=tv">
+                            <a href="../../Pages/MediaDetails/index.html?id=${data.results[i].id}&type=tv&page=details">
                                 <img src="${posterimg}" id="item0${i}" alt="">
                             </a>
                         </div>
@@ -98,7 +98,7 @@ $(document).ready(function () {
                         movieDiscovery.innerHTML += 
                         `
                         <div class="col mt-4 p-2">
-                            <a href="Pages/MediaDetails/index.html?id=${data.results[i].id}&type=movie">
+                            <a href="../../Pages/MediaDetails/index.html?id=${data.results[i].id}&type=movie&page=details">
                                 <img src="${posterimg}" id="item0${i}" alt="">
                             </a>
                         </div>
