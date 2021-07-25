@@ -4,9 +4,6 @@ $(document).ready(function () {
     
     //https://api.themoviedb.org/3/movie/497698?api_key=51bdd827768a48612af8d3a0bd074a01
 
-   
-    
-    $(document).ready(function () {
         const ApiKey = '?api_key=51bdd827768a48612af8d3a0bd074a01&language=pt-br'
         let baseURL = 'https://api.themoviedb.org/3/'
         
@@ -60,5 +57,4 @@ $(document).ready(function () {
             })
         }
     
-    })
     })

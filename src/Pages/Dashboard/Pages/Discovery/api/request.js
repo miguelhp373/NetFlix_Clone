@@ -34,7 +34,7 @@ $(document).ready(function () {
 
                    
         
-                    if(data.results[i].backdrop_path == null){
+                    if(data.results[i].poster_path == null){
 
                         tvDiscovery.innerHTML +=  
                         `
@@ -84,7 +84,7 @@ $(document).ready(function () {
 
                     //demonstra os filmes na tela
 
-                    if(data.results[i].backdrop_path == null){
+                    if(data.results[i].poster_path == null){
 
                         movieDiscovery.innerHTML +=  
                         `
