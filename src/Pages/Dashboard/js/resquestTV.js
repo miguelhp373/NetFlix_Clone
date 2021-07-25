@@ -1,12 +1,4 @@
 $(document).ready(function () {
-
-    //https://api.themoviedb.org/3/discover/movie?api_key=51bdd827768a48612af8d3a0bd074a01
-    
-    //https://api.themoviedb.org/3/movie/497698?api_key=51bdd827768a48612af8d3a0bd074a01
-    
-    //http://image.tmdb.org/t/p/w300/hUzeosd33nzE5MCNsZxCGEKTXaQ.png
-    
-    
     
     const ApiKey = '?api_key=51bdd827768a48612af8d3a0bd074a01'
     let baseURL = 'https://api.themoviedb.org/4/'
@@ -25,9 +17,7 @@ $(document).ready(function () {
         .then(function (data) {
     
                 for(let i = 2; i < data.results.length ; i++){
-                    
-                   // console.log(data.results[i]) //retorna o array item por item
-    
+
                     rowDiscover1 = document.getElementById('row01_tv_popular')
                 
                     //var posterimg = `http://image.tmdb.org/t/p/original${data.results[i].backdrop_path}`

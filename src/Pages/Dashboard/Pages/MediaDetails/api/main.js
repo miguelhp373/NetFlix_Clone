@@ -1,11 +1,4 @@
 $(document).ready(function () {
-  //https://api.themoviedb.org/3/discover/movie?api_key=51bdd827768a48612af8d3a0bd074a01
-
-  //https://api.themoviedb.org/3/movie/497698?api_key=51bdd827768a48612af8d3a0bd074a01
-
-  //http://image.tmdb.org/t/p/original/620hnMVLu6RSZW6a5rwO8gqpt0t.jpg --backdrop example
-
-  //http://image.tmdb.org/t/p/w300/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg --poster path
 
   $(document).ready(function () {
     const ApiKey = "?api_key=51bdd827768a48612af8d3a0bd074a01&language=pt-br";
@@ -14,10 +7,9 @@ $(document).ready(function () {
     const urlParams = new URLSearchParams(window.location.search);
     const idMedia = urlParams.get("id");
     const typeURLMedia = urlParams.get("type");
-    //console.log(typeURLMedia);
 
     if (typeURLMedia == "movie") {
-     // console.log(typeURLMedia);
+
       fetch(baseURL + `${typeURLMedia}/${idMedia}` + ApiKey)
         .then(function (response) {
           if (!response.ok) {
@@ -30,9 +22,6 @@ $(document).ready(function () {
           }
         })
         .then(function (data) {
-          console.log(data); //retorna o array item por item
-
-          //aqui retorna o link da imagem
 
           const backdropimage = document.getElementById("backdrop_image");
           const posterimage = document.getElementById("poster_image");

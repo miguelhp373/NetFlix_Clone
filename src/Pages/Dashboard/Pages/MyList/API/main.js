@@ -32,16 +32,16 @@ $(document).ready(function () {
           displayShow.innerHTML += `    
                  <div class="col mt-4 p-2" style='display:none;'>
                     <a href="../../Pages/MediaDetails/index.html?id=${data.id}&type=${JSON.stringify(data.id).length === 6 ? "movie" : "tv" }">
-                        <img src="${posterimg}" class="item0" alt="">
+                        <img src="${posterimg}" class="item${data.id}" id="item${data.id}" alt="">
                     </a>
                 </div>
 
             `;
         } else {
           displayShow.innerHTML += `
-                <div class="col mt-4 p-2">
+                <div class="col mt-4 p-2" id="col">
                     <a href="../../Pages/MediaDetails/index.html?id=${data.id}&type=${JSON.stringify(data.id).length === 6 ? "movie" : "tv" }">
-                        <img src="${posterimg}" class="item0" alt="">
+                        <img src="${posterimg}" class="item${data.id}" id="item${data.id}" alt="">
                     </a>
                 </div>
             `;

@@ -1,15 +1,8 @@
 $(document).ready(function () {
-    //#email-login-user-form
-    //.warning-email-error
-    //#pass-login-user-form
-    //.warning-pass-error 
-    //.hidden
-    //#submit-button-login
 
     var EmailValid;
     var PassValid;
 
-    //email
     $('#email-login-user-form').focusout(function () {
         if ($('#email-login-user-form').val().length == 0) {
             $('.warning-email-error').removeClass('hidden');
@@ -23,7 +16,7 @@ $(document).ready(function () {
             $('.lb-email').css({ 'margin-top': '-190px', 'margin-right': '-590px','font-size':'12px' });
             $('#email-login-user-form').css({ 'border': 'none'});
             $('.warning-email-error').addClass('hidden');
-            EmailValid = true; //email valid
+            EmailValid = true; 
         }
     })
 
@@ -36,7 +29,7 @@ $(document).ready(function () {
             $('.warning-email-error').addClass('hidden');
 
 
-            EmailValid = true; //email valid
+            EmailValid = true; 
         }
     })
 

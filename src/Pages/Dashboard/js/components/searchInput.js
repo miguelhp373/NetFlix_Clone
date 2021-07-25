@@ -15,7 +15,6 @@ $(document).ready(function () {
         var keycode = (event.keyCode ? event.keyCode : event.which)
 
         if(keycode == '13'){
-            //window.location.href= '../../Pages/Browser/index.html?query=' + query +'&page=browser'
 
             const urlParams = new URLSearchParams(window.location.search);
             const page = urlParams.get('page');
