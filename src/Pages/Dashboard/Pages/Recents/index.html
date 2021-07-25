@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetFlix</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetFlix</title>
 
-        <!--bootstrap 5.0-->
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://kit.fontawesome.com/bb41ae50aa.js"
-        crossorigin="anonymous"
-      ></script>
-      <script src="../../../../jquery/jquery-3.5.1.min.js"></script>
-      <script src="../../js/components/searchInput.js"></script>
-      <script src="api/request.js"></script>
-
-      <link rel="stylesheet" href="../../styles/index.css" />
-      <link rel="stylesheet" href="styles/main.css">
-      <link rel="stylesheet" href="../../../../styles/root/navbar.css">
-
+  <!--bootstrap 5.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
+  <script src="../../../../jquery/jquery-3.5.1.min.js"></script>
+  <script src="../../js/components/searchInput.js"></script>
+  <!-- <script src="api/request.js"></script> -->
+  <script src="API/main.js"></script>
+  
+  <link rel="stylesheet" href="../../../../styles/root/navbar.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
+<style>
+
+  .title_page{
+    margin: 20px;
+  }
+
+  .text_title_page{
+    color: #FFFF;
+  }
+</style>
+
 <body>
   <div class="navbar-top">
     <div class="logo_netflix">
@@ -45,7 +47,7 @@
         <a href="../Discovery/index.html?page=02" class="links_hover">
           <span>Filmes</span>
         </a>
-        <a href="../Recents/index.html?page=recents" class="links_hover">
+        <a href="#" class="links_hover">
           <span>Recentes</span>
         </a>
         <a href="../MyList/index.html" class="links_hover">
@@ -103,17 +105,19 @@
 
     </div>
   </div>
-    <main>
-        <div class="container-fluid">
-          <div class="title_page" >
-            <h2 id="text_title_page" class="text_title_page">
-              <!--Aqui vai o texto-->
-            </h2>
-          </div>
-          <div class="row justify-content-between" id="show_media">
-            <!--Aqui vai o conteudo-->
-          </div>
-        </div>
-    </main>
+
+  <main>
+    <div class="container-fluid">
+      <div class="title_page">
+        <h2 id="text_title_page" class="text_title_page">
+          <!--Aqui vai o texto-->
+        </h2>
+      </div>
+      <div class="row justify-content-between" id="show_media">
+        <!--Aqui vai o conteudo-->
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
