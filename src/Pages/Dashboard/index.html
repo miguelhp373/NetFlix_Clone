@@ -30,6 +30,15 @@
 
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="../../styles/root/navbar.css" />
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function(){
+            $(".splash_screen").addClass("hide");
+        },500)
+    });
+    </script>
+
   </head>
 
   <body>
@@ -114,66 +123,77 @@
       </div>
     </div>
 
-    <a href="Pages/Browser/index.html"></a>
-    <div class="home-page-dashboard">
-      <img src="/src/assets/dashboard/heroimage.png" alt="" />
-    </div>
-    <span class="name"> DARK </span>
-    <span class="info"> 2017 | 16 | 3 temporadas | Séries policiais </span>
-    <span class="sinopse_movie_landing">
-      Quatro famílias iniciam uma desesperada busca por respostas quando uma
-      criança desaparece e um complexo mistério envolvendo três gerações começa
-      a se revelar.
-    </span>
-    <a href="Pages/MediaDetails/index.html?id=70523&type=tv">
-      <button class="btn_play" id="btn_play">
-        <i class="fas fa-play"></i> &nbsp; Assistir
-      </button>
-    </a>
-    <img
-      src="/src/assets/dashboard/serie_icon.png"
-      alt=""
-      srcset=""
-      class="img_serie_name"
-    />
-
-    <div class="more_movies">
-      <div class="row_01_popular">
-        <h1 class="title_second_row">Séries Populares</h1>
-
-        <div class="buttons_tv_scroll">
-          <button id="button_scroll_left_01" class="button_scroll_left_01">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button id="button_scroll_right_01" class="button_scroll_right_01">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-
-        <div class="tv01">
-          <ul class="row01_tv_popular" id="row01_tv_popular">
-            <!--Os Filme Vão Aqui-->
-          </ul>
+    <main>
+    
+      <div class="splash_screen">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
         </div>
       </div>
-      <div class="row_02_popular">
-        <h1 class="title_second_row">Filmes Recentes</h1>
 
-        <div class="buttons_movies_scroll">
-          <button id="button_scroll_left_02" class="button_scroll_left_02">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button id="button_scroll_right_02" class="button_scroll_right_02">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+      <a href="Pages/Browser/index.html"></a>
+      <div class="home-page-dashboard">
+        <img src="/src/assets/dashboard/heroimage.png" alt="" />
+      </div>
+      <span class="name"> DARK </span>
+      <span class="info"> 2017 | 16 | 3 temporadas | Séries policiais </span>
+      <span class="sinopse_movie_landing">
+        Quatro famílias iniciam uma desesperada busca por respostas quando uma
+        criança desaparece e um complexo mistério envolvendo três gerações começa
+        a se revelar.
+      </span>
+      <a href="Pages/MediaDetails/index.html?id=70523&type=tv">
+        <button class="btn_play" id="btn_play">
+          <i class="fas fa-play"></i> &nbsp; Assistir
+        </button>
+      </a>
+      <img
+        src="/src/assets/dashboard/serie_icon.png"
+        alt=""
+        srcset=""
+        class="img_serie_name"
+      />
+  
+      <div class="more_movies">
+        <div class="row_01_popular">
+          <h1 class="title_second_row">Séries Populares</h1>
+  
+          <div class="buttons_tv_scroll">
+            <button id="button_scroll_left_01" class="button_scroll_left_01">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="button_scroll_right_01" class="button_scroll_right_01">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+  
+          <div class="tv01">
+            <ul class="row01_tv_popular" id="row01_tv_popular">
+              <!--Os Filme Vão Aqui-->
+            </ul>
+          </div>
         </div>
-
-        <div class="movies02">
-          <ul class="row02_movies_popular" id="row02_movies_popular">
-            <!--Os Filme Vão Aqui-->
-          </ul>
+        <div class="row_02_popular">
+          <h1 class="title_second_row">Filmes Recentes</h1>
+  
+          <div class="buttons_movies_scroll">
+            <button id="button_scroll_left_02" class="button_scroll_left_02">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="button_scroll_right_02" class="button_scroll_right_02">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+  
+          <div class="movies02">
+            <ul class="row02_movies_popular" id="row02_movies_popular">
+              <!--Os Filme Vão Aqui-->
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </body>
+  
+    </main>
+
+     </body>
 </html>

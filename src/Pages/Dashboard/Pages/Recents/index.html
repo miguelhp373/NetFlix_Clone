@@ -16,11 +16,26 @@
   <script src="https://kit.fontawesome.com/bb41ae50aa.js" crossorigin="anonymous"></script>
   <script src="../../../../jquery/jquery-3.5.1.min.js"></script>
   <script src="../../js/components/searchInput.js"></script>
-  <!-- <script src="api/request.js"></script> -->
+  
+ 
+  
   <script src="API/main.js"></script>
+  <script src="components/btn_clear_history.js"></script>
+
+
   
   <link rel="stylesheet" href="../../../../styles/root/navbar.css">
   <link rel="stylesheet" href="styles/main.css">
+
+<script>
+  $(document).ready(function () {
+    setTimeout(function(){
+        $(".splash_screen").addClass("hide");
+    },1000)
+});
+</script>
+
+
 </head>
 <style>
 
@@ -107,17 +122,28 @@
   </div>
 
   <main>
+    <div class="splash_screen">
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="title_page">
         <h2 id="text_title_page" class="text_title_page">
           <!--Aqui vai o texto-->
         </h2>
+        <div class="button_delete">
+          <button id="btn_clear_history">Limpar Histórico</button>
+        </div>
       </div>
       <div class="row justify-content-between" id="show_media">
         <!--Aqui vai o conteudo-->
       </div>
     </div>
   </main>
+
+
 </body>
 
 </html>

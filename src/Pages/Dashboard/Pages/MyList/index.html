@@ -21,6 +21,15 @@
 
   <link rel="stylesheet" href="../../../../styles/root/navbar.css">
   <link rel="stylesheet" href="styles/main.css">
+
+  <script>
+    $(document).ready(function () {
+      setTimeout(function(){
+          $(".splash_screen").addClass("hide");
+      },1000)
+  });
+  </script>
+
 </head>
 <style>
 
@@ -107,6 +116,11 @@
   </div>
 
   <main>
+    <div class="splash_screen">
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="title_page">
         <h2 id="text_title_page" class="text_title_page">

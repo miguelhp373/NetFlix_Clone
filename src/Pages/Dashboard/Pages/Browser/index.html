@@ -31,6 +31,15 @@
 
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="../../../../styles/root/navbar.css">
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function(){
+            $(".splash_screen").addClass("hide");
+        },1000)
+    });
+    </script>
+    
   </head>
   <body>
     
@@ -108,6 +117,11 @@
     </div>
     <!--Main-->
     <main>
+      <div class="splash_screen">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
       <div class="more_movies">
         <div class="row_01_popular">
           <h1 class="title_first_row">Séries Populares</h1>

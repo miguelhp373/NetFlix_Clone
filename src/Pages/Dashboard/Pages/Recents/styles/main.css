@@ -21,7 +21,42 @@ body{
   .title_page {
     margin: 14px;
     margin-bottom: -20px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
+  .title_page > .button_delete > button{
+    border: none;
+    background-color: #212121;
+    color: #FFFF;
+    padding: 6px;
+    border-radius: 3px;
+
+    transition: 0.2s;
+  }
+
+  .title_page > .button_delete > button:hover{
+    filter: brightness(70%);
+  }
+
+
+  .splash_screen{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hide{
+    display: none;
+}
 
 
 

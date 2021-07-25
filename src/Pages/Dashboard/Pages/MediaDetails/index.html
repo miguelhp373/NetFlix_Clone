@@ -17,11 +17,18 @@
     <script src="api/Favorites.js"></script>
     <script src="api/Recents.js"></script>
 
-    <!-- <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="styles/index.css"> -->
+
 
     <link rel="stylesheet" href="../../../../styles/root/navbar.css">
     <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+      $(document).ready(function () {
+        setTimeout(function(){
+            $(".splash_screen").addClass("hide");
+        },1000)
+    });
+    </script>
     
 
 </head>
@@ -99,6 +106,11 @@
   </div>
   
     <main>
+      <div class="splash_screen">
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
         <div class="container_body">
             <header>
               <div class="favorite_button">
