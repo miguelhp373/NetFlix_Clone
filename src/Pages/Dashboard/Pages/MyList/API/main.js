@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   var JsonDB = JSON.parse(localStorage.getItem("FavoritesList"));
 
-  localStorage.getItem("FavoritesList") == `{"results":{}}` ? document.getElementById("text_title_page").innerHTML = `Nenhum Favorito Adicionado` : document.getElementById("text_title_page").innerHTML = `Minha Lista`; 
+  localStorage.getItem("FavoritesList") == `{"results":{}}` || !localStorage.getItem("FavoritesList") ? document.getElementById("text_title_page").innerHTML = `Nenhum Favorito Adicionado` : document.getElementById("text_title_page").innerHTML = `Minha Lista`; 
 
   for (var count in JsonDB.results) {
     
@@ -25,7 +25,7 @@ $(document).ready(function () {
       })
       .then(function (data) {
         var posterimg = "http://image.tmdb.org/t/p/w300" + data.poster_path;
-        
+
         displayShow = document.getElementById("show_media");
 
         if ( data.backdrop_path == null) {
