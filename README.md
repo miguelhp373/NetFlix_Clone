@@ -1,4 +1,5 @@
 # NetFlix_Clone
+[![Netlify Status](https://api.netlify.com/api/v1/badges/54e9fc41-4ee6-4b01-acf9-908c186bad18/deploy-status)](https://app.netlify.com/sites/netflixclone-br/deploys)
 ## 🚀 Tecnologias
 
 * Html5
