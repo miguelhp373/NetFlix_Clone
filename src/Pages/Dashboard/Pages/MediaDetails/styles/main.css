@@ -127,3 +127,6 @@ body{
 .hide{
     display: none;
 }
+.scroll-hidden{
+    overflow-y: hidden;
+  }

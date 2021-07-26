@@ -34,12 +34,13 @@
         $(document).ready(function () {
           setTimeout(function(){
               $(".splash_screen").addClass("hide");
+              $("body").removeClass("scroll-hidden");
           },1000)
       });
       </script>
 
 </head>
-<body>
+<body class="scroll-hidden">
   <div class="navbar-top">
     <div class="logo_netflix">
       <img src="../../../../assets/logo/logo-netflix.png" alt="">

@@ -35,13 +35,14 @@
       $(document).ready(function () {
         setTimeout(function(){
             $(".splash_screen").addClass("hide");
-        },500)
+            $("body").removeClass("scroll-hidden");
+        },1000)
     });
     </script>
 
   </head>
 
-  <body>
+  <body class="scroll-hidden">
 
     <div class="navbar-top">
       <div class="logo_netflix">
@@ -123,7 +124,7 @@
       </div>
     </div>
 
-    <main>
+    <main >
     
       <div class="splash_screen">
         <div class="spinner-border text-danger" role="status">
@@ -149,8 +150,6 @@
       </a>
       <img
         src="/src/assets/dashboard/serie_icon.png"
-        alt=""
-        srcset=""
         class="img_serie_name"
       />
   
