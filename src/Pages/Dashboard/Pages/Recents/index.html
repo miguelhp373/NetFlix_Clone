@@ -30,7 +30,7 @@
 <script>
   $(document).ready(function () {
     setTimeout(function(){
-        $(".splash_screen").addClass("hide");
+        $(".loading").addClass("hide");
         $("body").removeClass("scroll-hidden");
     },1000)
 });
@@ -66,7 +66,7 @@
         <a href="#" class="links_hover">
           <span>Recentes</span>
         </a>
-        <a href="../MyList/index.html" class="links_hover">
+        <a href="../MyList/index.html?page=favorites" class="links_hover">
           <span>Minha Lista</span>
         </a>
       </div>
@@ -123,7 +123,7 @@
   </div>
 
   <main>
-    <div class="splash_screen">
+    <div class="loading">
       <div class="spinner-border text-danger" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
