@@ -182,6 +182,7 @@ body {
 
 .buttons_tv_scroll {
   width: 100%;
+  height: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -207,6 +208,7 @@ body {
 
 .buttons_movies_scroll {
   width: 100%;
+  height:0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
